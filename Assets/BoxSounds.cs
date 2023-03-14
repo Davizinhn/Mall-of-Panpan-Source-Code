@@ -6,6 +6,8 @@ using Random = UnityEngine.Random;
 public class BoxSounds : MonoBehaviour
 {
     public AudioClip[] clips;
+    public GameObject[] smokes;
+    public Transform pos;
     public Vector3 spawnPos;
         public LayerMask collisionLayer;
 
@@ -14,7 +16,11 @@ public class BoxSounds : MonoBehaviour
             this.gameObject.GetComponent<AudioSource>().PlayOneShot(clips[Random.RandomRange(0, clips.Length - 1)]);
             if(!GameObject.FindWithTag("Player").GetComponent<PegarObjeto>().estouSegurando && collision.transform.tag=="Solo" || !GameObject.FindWithTag("Player").GetComponent<PegarObjeto>().estouSegurando && collision.transform.tag=="Pegavel")
             {
-                this.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+            if(collision.transform.tag == "Solo")
+            {
+                Instantiate(smokes[Random.RandomRange(0, smokes.Length - 1)], pos.position, Quaternion.identity);
+            }
+            this.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             }
        
     }

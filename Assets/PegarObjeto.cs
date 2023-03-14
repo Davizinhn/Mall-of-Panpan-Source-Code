@@ -24,7 +24,7 @@ public class PegarObjeto : MonoBehaviour
             if (hit.transform.gameObject.tag == "Pegavel")
             {
                             EPicking.active=true;
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetMouseButtonDown(0))
                 {
                     pickedObject = hit.transform.gameObject.GetComponent<Rigidbody>();
                     pickedObject.constraints = RigidbodyConstraints.None;
@@ -41,7 +41,7 @@ public class PegarObjeto : MonoBehaviour
         if (estouSegurando)
         {
                         EPicking.active=false;
-            if (Input.GetKeyUp(KeyCode.E))
+            if (Input.GetMouseButtonUp(0))
             {
                 pickedObject.isKinematic = false;
                 pickedObject.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ;
