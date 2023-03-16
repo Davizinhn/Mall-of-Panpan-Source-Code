@@ -20,7 +20,15 @@ public class ChromaticControler : MonoBehaviour
                 v.profile.TryGetSettings(out gra);
         float distance = Vector3.Distance(enemy.position, player.position);
         float chromaticAberrationValue = maxChromaticAberration * (1 - (distance / maxDistance));
+                if(this.GetComponent<EnemyAI>().canSeguirJogador)
+        {
         ca.intensity.value = chromaticAberrationValue;
                 gra.intensity.value = chromaticAberrationValue;
+        }
+        else
+        {
+                    ca.intensity.value = 0f;
+                gra.intensity.value = 0f;
+        }
     }
 }

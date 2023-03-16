@@ -1517,7 +1517,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &539233070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5607,7 +5607,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.75
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5723,7 +5723,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.35
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -8384,7 +8384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6a5f72e60bca8d48aaf5347a68501af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 5
+  distance: 3
   pushForce: 100
   maxDistanceFromGround: 0.5
   collisionLayer:

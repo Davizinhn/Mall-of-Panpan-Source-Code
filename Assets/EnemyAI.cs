@@ -19,6 +19,18 @@ public class EnemyAI : MonoBehaviour
         if(canSeguirJogador)
         {
             agent.SetDestination(Player.transform.position);
+            if(aud.volume < 0.75f)
+            {
+                aud.volume= aud.volume+0.05f;
+            }
+        }
+        else
+        {
+            agent.Stop();
+            if(aud.volume > 0f)
+            {
+                aud.volume= aud.volume-0.05f;
+            }
         }
         ChaseAudioControl();
     }
