@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.PostProcessing;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -19,6 +21,10 @@ public class EnemyAI : MonoBehaviour
             agent.SetDestination(Player.transform.position);
         }
         ChaseAudioControl();
+    }
+
+    void Start()
+    {
     }
 
     void ChaseAudioControl()

@@ -34,6 +34,17 @@ public class PegarObjeto : MonoBehaviour
                     estouSegurando = true;
                 }
             }
+            if (hit.transform.gameObject.tag == "Porta")
+            {
+                                            EPicking.active=true;
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    if(hit.transform.gameObject.GetComponent<Animator>().tag != "Abrir")
+                    {
+                    hit.transform.gameObject.GetComponent<Animator>().Play("Abrir");
+                    }   
+                }
+                }
             Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * distance, Color.green);
         }else{
                         EPicking.active=false;

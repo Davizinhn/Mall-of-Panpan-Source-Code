@@ -120,7 +120,7 @@ MonoBehaviour:
     value: 1
   lumContrib:
     overrideState: 1
-    value: 0.8
+    value: 0
 --- !u!114 &-1028709870976337256
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -269,7 +269,7 @@ MonoBehaviour:
     defaultState: 1
   intensity:
     overrideState: 1
-    value: 0.084
+    value: 0.03
   fastMode:
     overrideState: 1
     value: 0
