@@ -42,6 +42,7 @@ public class PegarObjeto : MonoBehaviour
                     if(hit.transform.gameObject.GetComponent<Animator>().tag != "Abrir")
                     {
                     hit.transform.gameObject.GetComponent<Animator>().Play("Abrir");
+                    hit.transform.gameObject.GetComponent<AudioSource>().Play();
                     }   
                 }
                 }
