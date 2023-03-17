@@ -17,8 +17,9 @@ public class TipManager : MonoBehaviour
 
     public IEnumerator comecar(float sec, string tipstr)
     {
+                StopCoroutine(comecar(0f, ""));
+                        StopCoroutine(voltar());
         yield return new WaitForSeconds(sec);
-        StopCoroutine(voltar());
         this.gameObject.GetComponent<AudioSource>().Play();
         text.text=tipstr;
         ShowingTip = true;

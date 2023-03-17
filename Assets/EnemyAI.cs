@@ -13,9 +13,11 @@ public class EnemyAI : MonoBehaviour
     public AudioSource aud;
     public AudioClip[] chases;
     bool toqueiChase;
+    public Animator anim;
 
     void Update()
     {
+                    anim.SetBool("IsWalking", canSeguirJogador);
         if(canSeguirJogador)
         {
             agent.SetDestination(Player.transform.position);

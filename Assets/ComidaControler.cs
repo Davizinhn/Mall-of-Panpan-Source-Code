@@ -9,12 +9,15 @@ public class ComidaControler : MonoBehaviour
     bool A = true;
     public bool canAdd = true;
     public AudioSource tummmm;
+    public GameObject portaparapoder;
+    public bool jato;
 
     public void Update()
     {   
         if(precisodesse==tenhoesses && A==true)
         {
             A = false;
+            jato = true;
             StartCoroutine(abrirportinha());
         }
     }
@@ -23,8 +26,11 @@ public class ComidaControler : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         // coisas
-        Debug.Log("debig");
+        portaparapoder.tag="Porta";
+        this.gameObject.GetComponent<EnemyAI>().canSeguirJogador=true;
         this.gameObject.tag="Untagged";
+        this.gameObject.active=false;
+                this.gameObject.active=true;
         StopCoroutine(abrirportinha());
     }
 

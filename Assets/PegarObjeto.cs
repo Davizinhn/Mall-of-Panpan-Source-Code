@@ -88,7 +88,7 @@ public class PegarObjeto : MonoBehaviour
                                                     hit.transform.gameObject.GetComponent<ComidaControler>().AddComida();
                                                 }
                                             }
-                                            else if(!HasStake && hit.transform.gameObject.GetComponent<ComidaControler>().canAdd)
+                                            else if(!HasStake && hit.transform.gameObject.GetComponent<ComidaControler>().canAdd && !hit.transform.gameObject.GetComponent<ComidaControler>().jato)
                                             {
                                                 GameObject.Find("TipManager").GetComponent<TipManager>().ShowItem("You don't have any food");
                                             }
