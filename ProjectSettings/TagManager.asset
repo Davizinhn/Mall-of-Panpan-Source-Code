@@ -7,6 +7,8 @@ TagManager:
   - Pegavel
   - Solo
   - Porta
+  - Item
+  - Comidinha
   layers:
   - Default
   - TransparentFX

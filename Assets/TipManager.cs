@@ -25,6 +25,12 @@ public class TipManager : MonoBehaviour
         StartCoroutine(voltar());
     }
 
+    public void ShowItem(string tipstr)
+    {
+        StopCoroutine(comecar(0f, tipstr));
+        StartCoroutine(comecar(0f, tipstr));
+    }
+
     public void Update()
     {
         anim.SetBool("Active", ShowingTip);

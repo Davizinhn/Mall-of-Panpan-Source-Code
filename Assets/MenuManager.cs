@@ -22,6 +22,7 @@ public class MenuManager : MonoBehaviour
         StartCoroutine(fazerLoad("Quit"));
     }
 
+
     public void Update()
     {
         if(ha)
@@ -30,6 +31,16 @@ public class MenuManager : MonoBehaviour
         {
             i.volume = i.volume-0.005f;
         }
+        }
+        else
+        {
+                            foreach(AudioSource i in aud)
+                {
+                    if(i.volume < 0.55f)
+                    {
+                        i.volume = i.volume+0.005f;
+                    }
+                }
         }
     }
 
