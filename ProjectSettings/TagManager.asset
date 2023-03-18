@@ -9,6 +9,7 @@ TagManager:
   - Porta
   - Item
   - Comidinha
+  - Trancada
   layers:
   - Default
   - TransparentFX

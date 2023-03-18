@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4659918895229194498}
   - component: {fileID: 4659918895229194497}
   - component: {fileID: 9083812987774436833}
+  - component: {fileID: 8304709566995271162}
   m_Layer: 0
   m_Name: Porta
   m_TagString: Untagged
@@ -233,6 +234,19 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 0
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &8304709566995271162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4659918895229194527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7e600a9c3d51941a82140daa588937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disso: 
 --- !u!1 &6875772450447389820
 GameObject:
   m_ObjectHideFlags: 0

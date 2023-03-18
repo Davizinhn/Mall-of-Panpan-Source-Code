@@ -32,7 +32,7 @@ public class ComidaControler : MonoBehaviour
         // coisas
         portaparapoder.tag="Porta";
         //this.gameObject.GetComponent<EnemyAI>().canSeguirJogador=true;
-        GameObject.Find("TipManager").GetComponent<TipManager>().ShowItem("Brown Card x1");
+        GameObject.Find("TipManager").GetComponent<TipManager>().ShowItem("Brown KeyCard x1");
         this.gameObject.tag="Untagged";
                 new WaitForSeconds(0.75f);
                 brownCard.active=false;

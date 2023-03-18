@@ -47,6 +47,14 @@ public class PegarObjeto : MonoBehaviour
                     }   
                 }
             }
+            else if (hit.transform.gameObject.tag == "Trancada")
+            {
+                                            EPicking.active=true;
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    GameObject.Find("TipManager").GetComponent<TipManager>().ShowItem(hit.transform.gameObject.GetComponent<PrecisaDe>().disso);
+                }
+            }
             else if (hit.transform.gameObject.tag == "Item")
             {
                                             EPicking.active=true;
