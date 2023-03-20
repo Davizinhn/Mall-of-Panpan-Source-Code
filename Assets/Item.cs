@@ -6,7 +6,8 @@ public class Item : MonoBehaviour
 {
     public enum ItemType
     {
-        Steak
+        Steak, 
+        Lore
     }
     public ItemType type;
 

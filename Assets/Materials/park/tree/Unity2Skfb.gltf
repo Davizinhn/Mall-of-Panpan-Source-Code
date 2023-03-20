@@ -1,0 +1,234 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 12835,
+      "type": "VEC3",
+      "max": [
+        9.8637523651123047,
+        14.07265567779541,
+        23.516464233398438
+      ],
+      "min": [
+        -13.196376800537109,
+        1.2857539653778076,
+        -18.012382507324219
+      ]
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 12835,
+      "type": "VEC3",
+      "max": [
+        0.9999845027923584,
+        0.9999392032623291,
+        0.99951183795928955
+      ],
+      "min": [
+        -0.99995625019073486,
+        -0.99988901615142822,
+        -0.99982893466949463
+      ]
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 12835,
+      "type": "VEC4",
+      "max": [
+        0.99802160263061523,
+        0.999992847442627,
+        0.99999642372131348,
+        -1.0
+      ],
+      "min": [
+        -0.99995815753936768,
+        -0.99972540140151978,
+        -0.999993085861206,
+        -1.0
+      ]
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 12835,
+      "type": "VEC2",
+      "max": [
+        0.9850342869758606,
+        0.99927932024002075
+      ],
+      "min": [
+        0.00072065531276166439,
+        0.00072065531276166439
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5125,
+      "count": 61170,
+      "type": "SCALAR",
+      "max": [
+        12834.0
+      ],
+      "min": [
+        0.0
+      ]
+    }
+  ],
+  "asset": {
+    "generator": "UnityGLTF (2018.2.10f1)",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "Unity2Skfb.bin",
+      "byteLength": 860760
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 154020
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 154020,
+      "byteLength": 154020
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 308040,
+      "byteLength": 205360
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 513400,
+      "byteLength": 102680
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 616080,
+      "byteLength": 244680
+    }
+  ],
+  "images": [
+    {
+      "uri": "498624_ForestLogMedium_LOD0_N.png",
+      "name": "ForestLogMedium_LOD0_N"
+    },
+    {
+      "uri": "13482_ForestLogMedium_LOD0_A.jpg",
+      "name": "ForestLogMedium_LOD0_A"
+    },
+    {
+      "uri": "498628_ForestLogMedium_LOD0_MS.png",
+      "name": "ForestLogMedium_LOD0_MS"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 1
+        },
+        "metallicFactor": 0.0,
+        "metallicRoughnessTexture": {
+          "index": 2
+        }
+      },
+      "normalTexture": {
+        "index": 0
+      },
+      "emissiveFactor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "name": "ForestLogMedium_1"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "ForestLogMedium"
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "rotation": [
+        -0.0556942821,
+        -0.840235233,
+        0.0206518583,
+        -0.538958669
+      ],
+      "scale": [
+        0.058219023,
+        0.05821899,
+        0.0582190268
+      ],
+      "translation": [
+        0.47,
+        0.0,
+        3.38
+      ],
+      "name": "ForestLogMedium"
+    },
+    {
+      "mesh": 0,
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "name": "ForestLogMedium"
+    }
+  ],
+  "samplers": [
+    {
+      "minFilter": 9729
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "Unity2Skfb"
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0,
+      "name": "ForestLogMedium_LOD0_N"
+    },
+    {
+      "sampler": 0,
+      "source": 1,
+      "name": "ForestLogMedium_LOD0_A"
+    },
+    {
+      "sampler": 0,
+      "source": 2,
+      "name": "ForestLogMedium_LOD0_MS"
+    }
+  ]
+}

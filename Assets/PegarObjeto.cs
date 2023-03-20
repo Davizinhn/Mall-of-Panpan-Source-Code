@@ -61,6 +61,10 @@ public class PegarObjeto : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     GameObject.Find("TipManager").GetComponent<TipManager>().ShowItem(hit.transform.gameObject.GetComponent<Item>().type.ToString()+" 1x");
+                    if(hit.transform.gameObject.GetComponent<Item>().type == Item.ItemType.Lore)
+                    {
+                        hit.transform.gameObject.GetComponent<LoreExecute>().ab();
+                    }
                     inventory.Add(hit.transform.gameObject.GetComponent<Item>().type.ToString());
                     Destroy(hit.transform.gameObject);
                 }

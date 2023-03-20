@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.SceneManagement;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -14,6 +15,12 @@ public class EnemyAI : MonoBehaviour
     public AudioClip[] chases;
     bool toqueiChase;
     public Animator anim;
+    public Vector3 initial;
+
+    void Awake()
+    {
+        Player = GameObject.FindWithTag("Player");
+    }
 
     void Update()
     {
@@ -29,6 +36,7 @@ public class EnemyAI : MonoBehaviour
         else
         {
             agent.Stop();
+            this.transform.localPosition = initial;
             if(aud.volume > 0f)
             {
                 aud.volume= aud.volume-0.05f;
@@ -39,6 +47,14 @@ public class EnemyAI : MonoBehaviour
 
     void Start()
     {
+    }
+
+    public void OnCollisionEnter(Collision col)
+    {
+        if(col.gameObject.tag=="Player" && canSeguirJogador)
+        {
+            SceneManager.LoadScene("Died");
+        }
     }
 
     void ChaseAudioControl()

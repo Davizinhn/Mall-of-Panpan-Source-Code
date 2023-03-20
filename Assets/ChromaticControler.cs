@@ -14,6 +14,13 @@ public class ChromaticControler : MonoBehaviour
     public float maxDistance = 10f;
     public float maxChromaticAberration = 1f;
 
+    public void Awake()
+    {
+        player = GameObject.FindWithTag("Player").transform;
+        enemy = this.gameObject.transform;
+        v = player.gameObject.GetComponentInChildren<PostProcessVolume>();
+    }
+
     private void Update()
     {
         v.profile.TryGetSettings(out ca);
